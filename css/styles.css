@@ -1,0 +1,97 @@
+/**
+ * Reset and Basic Styles
+ *
+ * @format
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.849);
+  color: rgb(142, 32, 32);
+  width: 88%;
+
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.nav-icon i {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.span {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.nav-icon:hover i {
+  color: #007bff;
+}
+.product-section ,.about,.contact{
+  margin-top: 50px;
+}
+
+.partner-logo,
+.collab-logo,
+.footer-logo {
+  width: 150px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.partner-logo:hover,
+.collab-logo:hover,
+.footer-logo:hover {
+  opacity: 1;
+}
+
+.btn-outline-danger i {
+  margin-right: 5px;
+}
+
+/* Price Range Display */
+#price-value {
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar .navbar-nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .partner-logo,
+  .collab-logo,
+  .footer-logo {
+    width: 100px;
+  }
+}
